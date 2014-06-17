@@ -12,7 +12,7 @@
 ## Parameters:
 ##   - x : the matrix object
 ## Returns:
-##   - a matrix object
+##   - a list with environment information (???)
 
 makeCacheMatrix <- function(x = matrix()) {
     ## By default, the inverse of the matrix is empty
@@ -33,11 +33,10 @@ makeCacheMatrix <- function(x = matrix()) {
     ## Get the inverse of the matrix
     getinverse <- function() inv
 
-    ## Export the methods????
+    ## Return information about the object
     list(set = set, get = get,
          setinverse = setinverse,
          getinverse = getinverse)
-
 }
 
 
